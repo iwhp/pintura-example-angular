@@ -24,6 +24,7 @@
     "@pqina/angular-pintura": "^9.0.0",
     "@pqina/filepond-plugin-image-editor": "^8.57.8",
     "@pqina/pintura": "^8.x",
+    "filepond": "^4.30.4",
     "filepond-plugin-file-poster": "^2.5.1",
     "ngx-filepond": "^7.0.1",
     "rxjs": "~7.8.0",

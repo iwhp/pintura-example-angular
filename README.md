@@ -1,19 +1,13 @@
 # Pintura Angular example project
 
-This projects uses a test version of Pintura.
+Run `npm install` to install project dependencies, then run `npm start` to start the development server.
 
-This version of Pintura will show a watermark in the editor and on generated images.
+Navigate to http://localhost:4200 to view the project.
+
+Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-angular)
+
+### License
+
+This projects uses a test version of Pintura. This version of Pintura will show a watermark in the editor and on generated images.
 
 Purchase a license at https://pqina.nl/pintura to use Pintura in production.
-
-## Installation
-
-```bash
-npm install
-```
-
-## Run
-
-```bash
-npm start
-```

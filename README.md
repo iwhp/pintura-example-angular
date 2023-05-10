@@ -6,6 +6,8 @@ Navigate to http://localhost:4200 to view the project.
 
 Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-angular)
 
+We need to set the `compilerOptions` property `esModuleInterop` to `true` in our `tsconfig.json` to import the FilePond modules.
+
 ### License
 
 This projects uses a test version of Pintura. This version of Pintura will show a watermark in the editor and on generated images.

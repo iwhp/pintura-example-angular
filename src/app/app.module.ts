@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { AngularPinturaModule } from '@pqina/angular-pintura';
 
 import { FilePondModule, registerPlugin } from 'ngx-filepond';
-import * as FilePondPluginFilePoster from 'filepond-plugin-file-poster';
-import * as FilePondPluginImageEditor from '@pqina/filepond-plugin-image-editor';
 
-// @ts-ignore
-registerPlugin(FilePondPluginFilePoster, FilePondPluginImageEditor.default);
+import FilePondPluginFilePoster from 'filepond-plugin-file-poster';
+
+import FilePondPluginImageEditor from '@pqina/filepond-plugin-image-editor';
+
+registerPlugin(FilePondPluginFilePoster, FilePondPluginImageEditor);
 
 @NgModule({
   declarations: [AppComponent],

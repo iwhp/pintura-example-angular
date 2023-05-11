@@ -3,8 +3,9 @@
   "name": "pintura-example-angular",
   "version": "0.0.0",
   "author": "Rik Schennink at PQINA",
-  "description": "A Pintura Angular Example Project",
   "license": "https://pqina.nl/pintura/license/",
+  "homepage": "https://pqina.nl/pintura/",
+  "description": "A Pintura Angular Example Project",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

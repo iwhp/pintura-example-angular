@@ -8,6 +8,8 @@ Or try it out right now and [open the project on StackBlitz](https://stackblitz.
 
 We need to set the `compilerOptions` property `esModuleInterop` to `true` in our `tsconfig.json` to import the FilePond modules.
 
+Additionally the product build has specific settings for `optimization` to [prevent CSS warning messages](https://github.com/angular/angular-cli/issues/20906).
+
 ### License
 
 This projects uses a test version of Pintura. This version of Pintura will show a watermark in the editor and on generated images.

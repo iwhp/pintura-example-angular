@@ -1,0 +1,12 @@
+<h2>FilePond example</h2>
+
+<file-pond
+  #myPond
+  [options]="pondOptions"
+  [files]="pondFiles"
+  (oninit)="pondHandleInit()"
+  (onaddfile)="pondHandleAddFile($event)"
+  (onactivatefile)="pondHandleActivateFile($event)"
+  (onpreparefile)="pondHandlePrepareFile($event)"
+>
+</file-pond>

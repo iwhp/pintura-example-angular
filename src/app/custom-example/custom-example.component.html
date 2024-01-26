@@ -1,0 +1,20 @@
+<style>
+  pintura-editor {
+    box-shadow: 0 0 0 1px #eee;
+  }
+</style>
+
+<h2>Custom example</h2>
+
+<div style="height: 70vh">
+  <pintura-editor
+    #editorRef
+    [options]="editorOptions"
+    [src]="src"
+    [imageCropAspectRatio]="cropAspectRatio"
+    (load)="handleLoad($event)"
+    (process)="handleProcess($event)"
+  ></pintura-editor>
+</div>
+
+<p><img *ngIf="result" [src]="result" alt="" /></p>

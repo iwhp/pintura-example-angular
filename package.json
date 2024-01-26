@@ -8,7 +8,7 @@
   "description": "A Pintura Angular Example Project",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 10.0.0.15",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -30,6 +30,7 @@
     "ngx-filepond": "^7.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "webm-duration-fix": "^1.0.4",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

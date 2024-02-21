@@ -1,4 +1,4 @@
-# Pintura Angular example project
+# Angular Image Editor with Pintura example project
 
 Run `npm install` to install project dependencies, then run `npm start` to start the development server.
 

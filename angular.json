@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pintura-example-angular:build:production"
+              "buildTarget": "pintura-example-angular:build:production"
             },
             "development": {
-              "browserTarget": "pintura-example-angular:build:development"
+              "buildTarget": "pintura-example-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pintura-example-angular:build"
+            "buildTarget": "pintura-example-angular:build"
           }
         },
         "test": {

@@ -24,7 +24,7 @@
     "@angular/router": "^17.3.11",
     "@pqina/angular-pintura": "^9.x",
     "@pqina/filepond-plugin-image-editor": "^9.x",
-    "@pqina/pintura": "^8.x",
+    "@pqina/pintura": "^8.82.6",
     "filepond": "^4.30.4",
     "filepond-plugin-file-poster": "^2.5.1",
     "ngx-filepond": "^7.0.1",
@@ -34,8 +34,8 @@
     "zone.js": "~0.14.7"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.0",
-    "@angular/cli": "~16.0.0",
+    "@angular-devkit/build-angular": "^17.3.8",
+    "@angular/cli": "~17.3.8",
     "@angular/compiler-cli": "^17.3.11",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",

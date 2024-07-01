@@ -10,6 +10,8 @@
   <button (click)="this.cropAspectRatio = this.cropAspectRatio === 1 ? 2 : 1">
     Toggle crop aspect ratio
   </button>
+
+  <button (click)="handleChangeLocale($event)">Load Dutch locale</button>
 </p>
 
 <div style="height: 70vh">
@@ -18,6 +20,7 @@
     [options]="editorOptions"
     [src]="src"
     [imageCropAspectRatio]="cropAspectRatio"
+    [locale]="locale"
     (load)="handleLoad($event)"
     (process)="handleProcess($event)"
   ></pintura-editor>

@@ -18,6 +18,7 @@ export class DefaultsExampleComponent {
   src: string = 'assets/image.jpeg';
   result?: string = undefined;
   cropAspectRatio = 1;
+  locale?: any = { ...getEditorDefaults().locale };
 
   handleLoad($event: any) {
     console.log('load', $event);
@@ -39,5 +40,14 @@ export class DefaultsExampleComponent {
     this.result = this.sanitizer.bypassSecurityTrustResourceUrl(
       objectURL
     ) as string;
+  }
+
+  handleChangeLocale($event: any) {
+    // load german locale
+    import('@pqina/pintura/locale/nl_NL/index.js').then(
+      ({ default: locale }) => {
+        this.locale = locale;
+      }
+    );
   }
 }

@@ -6,6 +6,7 @@ import { OverlayExampleComponent } from './overlay-example/overlay-example.compo
 import { VideoExampleComponent } from './video-example/video-example.component';
 
 export const routes = [
+  { path: '', component: DefaultsExampleComponent },
   { path: 'custom-example', component: CustomExampleComponent },
   { path: 'defaults-example', component: DefaultsExampleComponent },
   { path: 'filepond-example', component: FilepondExampleComponent },

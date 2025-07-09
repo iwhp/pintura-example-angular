@@ -33,9 +33,10 @@ setPlugins(plugin_trim);
 */
 
 @Component({
-  selector: 'app-video-example',
-  templateUrl: './video-example.component.html',
-  styleUrls: ['./video-example.component.css'],
+    selector: 'app-video-example',
+    templateUrl: './video-example.component.html',
+    styleUrls: ['./video-example.component.css'],
+    standalone: false
 })
 export class VideoExampleComponent {
   @ViewChild('editorRef') editorRef?: PinturaEditorComponent<any> = undefined;

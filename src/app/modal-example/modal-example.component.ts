@@ -3,9 +3,10 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { PinturaEditorOptions, getEditorDefaults } from '@pqina/pintura';
 
 @Component({
-  selector: 'app-modal-example',
-  templateUrl: './modal-example.component.html',
-  styleUrls: ['./modal-example.component.css'],
+    selector: 'app-modal-example',
+    templateUrl: './modal-example.component.html',
+    styleUrls: ['./modal-example.component.css'],
+    standalone: false
 })
 export class ModalExampleComponent {
   constructor(private sanitizer: DomSanitizer) {}

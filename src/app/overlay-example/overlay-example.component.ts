@@ -35,9 +35,10 @@ import {
 } from '@pqina/pintura';
 
 @Component({
-  selector: 'app-overlay-example',
-  templateUrl: './overlay-example.component.html',
-  styleUrls: ['./overlay-example.component.css'],
+    selector: 'app-overlay-example',
+    templateUrl: './overlay-example.component.html',
+    styleUrls: ['./overlay-example.component.css'],
+    standalone: false
 })
 export class OverlayExampleComponent {
   // @ViewChild('editorRef') editorRef?: PinturaEditorComponent<any> = undefined;

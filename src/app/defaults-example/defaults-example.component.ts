@@ -4,9 +4,10 @@ import { PinturaEditorComponent } from '@pqina/angular-pintura';
 import { PinturaEditorOptions, getEditorDefaults } from '@pqina/pintura';
 
 @Component({
-  selector: 'app-defaults-example',
-  templateUrl: './defaults-example.component.html',
-  styleUrls: ['./defaults-example.component.css'],
+    selector: 'app-defaults-example',
+    templateUrl: './defaults-example.component.html',
+    styleUrls: ['./defaults-example.component.css'],
+    standalone: false
 })
 export class DefaultsExampleComponent {
   @ViewChild('editorRef') editorRef?: PinturaEditorComponent<any> = undefined;

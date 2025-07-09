@@ -39,9 +39,10 @@ import {
 setPlugins(plugin_crop, plugin_finetune, plugin_filter, plugin_annotate);
 
 @Component({
-  selector: 'app-custom-example',
-  templateUrl: './custom-example.component.html',
-  styleUrls: ['./custom-example.component.css'],
+    selector: 'app-custom-example',
+    templateUrl: './custom-example.component.html',
+    styleUrls: ['./custom-example.component.css'],
+    standalone: false
 })
 export class CustomExampleComponent {
   @ViewChild('editorRef') editorRef?: PinturaEditorComponent<any> = undefined;

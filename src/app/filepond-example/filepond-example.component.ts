@@ -36,9 +36,10 @@ import {
 } from '@pqina/pintura';
 
 @Component({
-  selector: 'app-filepond-example',
-  templateUrl: './filepond-example.component.html',
-  styleUrls: ['./filepond-example.component.css'],
+    selector: 'app-filepond-example',
+    templateUrl: './filepond-example.component.html',
+    styleUrls: ['./filepond-example.component.css'],
+    standalone: false
 })
 export class FilepondExampleComponent {
   // filepond

@@ -1,19 +1,27 @@
 <h2>Overlay example</h2>
 
 <p>
-  <button *ngIf="!visible" (click)="visible = true">Edit image</button>
-  <button *ngIf="visible" (click)="visible = false">Close editor</button>
+  @if (!visible) {
+    <button (click)="visible = true">Edit image</button>
+  }
+  @if (visible) {
+    <button (click)="visible = false">Close editor</button>
+  }
 </p>
 
-<p *ngIf="!visible">
-  <img [src]="result || src" width="512" height="256" alt="" />
-</p>
+@if (!visible) {
+  <p>
+    <img [src]="result || src" width="512" height="256" alt="" />
+  </p>
+}
 
-<div *ngIf="visible" style="width: 512px; height: 256px">
-  <pintura-editor-overlay
-    [options]="editorOptions"
-    [src]="src"
-    (load)="handleLoad($event)"
-    (process)="handleProcess($event)"
-  ></pintura-editor-overlay>
-</div>
+@if (visible) {
+  <div style="width: 512px; height: 256px">
+    <pintura-editor-overlay
+      [options]="editorOptions"
+      [src]="src"
+      (load)="handleLoad($event)"
+      (process)="handleProcess($event)"
+    ></pintura-editor-overlay>
+  </div>
+}

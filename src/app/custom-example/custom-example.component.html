@@ -1,7 +1,7 @@
 <style>
   pintura-editor {
-    box-shadow: 0 0 0 1px #eee;
-  }
+  box-shadow: 0 0 0 1px #eee;
+}
 </style>
 
 <h2>Custom example</h2>
@@ -17,4 +17,6 @@
   ></pintura-editor>
 </div>
 
-<p><img *ngIf="result" [src]="result" alt="" /></p>
+<p>@if (result) {
+  <img [src]="result" alt="" />
+}</p>

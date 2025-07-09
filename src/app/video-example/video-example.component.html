@@ -1,7 +1,7 @@
 <style>
   pintura-editor {
-    box-shadow: 0 0 0 1px #eee;
-  }
+  box-shadow: 0 0 0 1px #eee;
+}
 </style>
 
 <h2>Video example</h2>
@@ -17,8 +17,12 @@
   ></pintura-editor>
 </div>
 
-<p *ngIf="result && resultType === 'video'">
-  <video [src]="result" alt="" controls></video>
-</p>
+@if (result && resultType === 'video') {
+  <p>
+    <video [src]="result" alt="" controls></video>
+  </p>
+}
 
-<p *ngIf="result && resultType === 'image'"><img [src]="result" alt="" /></p>
+@if (result && resultType === 'image') {
+  <p><img [src]="result" alt="" /></p>
+}

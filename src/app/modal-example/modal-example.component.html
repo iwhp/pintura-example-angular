@@ -2,14 +2,17 @@
 
 <button (click)="visible = true">Show Modal</button>
 
-<pintura-editor-modal
-  *ngIf="visible"
-  [options]="editorOptions"
-  [src]="src"
-  [imageCropAspectRatio]="1"
-  (hide)="visible = false"
-  (load)="handleLoad($event)"
-  (process)="handleProcess($event)"
-></pintura-editor-modal>
+@if (visible) {
+  <pintura-editor-modal
+    [options]="editorOptions"
+    [src]="src"
+    [imageCropAspectRatio]="1"
+    (hide)="visible = false"
+    (load)="handleLoad($event)"
+    (process)="handleProcess($event)"
+  ></pintura-editor-modal>
+}
 
-<p><img *ngIf="result" [src]="result" alt="" /></p>
+<p>@if (result) {
+  <img [src]="result" alt="" />
+}</p>
